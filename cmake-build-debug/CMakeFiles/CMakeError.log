@@ -1,0 +1,21 @@
+Performing C++ SOURCE FILE Test LDFLAG_FSANITIZE_UNDEFINED_OKAY failed with the following output:
+Change Dir: C:/Users/elw81/OneDrive/Desktop/2020-2021 Classes/Winter 2021/CS211/labs/final_project/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_1960f/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_1960f.dir\build.make CMakeFiles/cmTC_1960f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/elw81/OneDrive/Desktop/2020-2021 Classes/Winter 2021/CS211/labs/final_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1960f.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe    -fsanitize=undefined -DLDFLAG_FSANITIZE_UNDEFINED_OKAY   -o CMakeFiles\cmTC_1960f.dir\src.cxx.obj -c "C:\Users\elw81\OneDrive\Desktop\2020-2021 Classes\Winter 2021\CS211\labs\final_project\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx"
+Linking CXX executable cmTC_1960f.exe
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1960f.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_1960f.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_1960f.dir/objects.a @CMakeFiles\cmTC_1960f.dir\objects1.rsp
+C:\MinGW\bin\g++.exe  -fsanitize=undefined -DLDFLAG_FSANITIZE_UNDEFINED_OKAY    -Wl,--whole-archive CMakeFiles\cmTC_1960f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1960f.exe -Wl,--out-implib,libcmTC_1960f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1960f.dir\linklibs.rsp
+C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/ld.exe: cannot find -lubsan
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_1960f.dir\build.make:108: cmTC_1960f.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/elw81/OneDrive/Desktop/2020-2021 Classes/Winter 2021/CS211/labs/final_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:140: cmTC_1960f/fast] Error 2
+
+
+Source file was:
+int main(){}
